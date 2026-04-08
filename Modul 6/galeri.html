@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeri - Bootstrap Tutorial</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .galeri-header {
+      background: linear-gradient(135deg, #6f42c1, #d63384);
+      color: white;
+      padding: 60px 0;
+    }
+    .galeri-item {
+      height: 200px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .galeri-item:hover { transform: scale(1.05); }
+    footer { background-color: #212529; color: #adb5bd; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html">🎓 WebKu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="galeri-header text-center">
+    <div class="container">
+      <h1 class="fw-bold">🖼️ Galeri</h1>
+      <p class="lead">Koleksi foto dan karya</p>
+      <span class="badge bg-light text-dark fs-6">Nama: Aris Musta'in | NIM: 253307026</span>
+    </div>
+  </section>
+
+  <!-- FILTER TOMBOL -->
+  <section class="py-4 bg-light">
+    <div class="container text-center">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-purple btn-outline-secondary active">Semua</button>
+        <button type="button" class="btn btn-outline-secondary">Alam</button>
+        <button type="button" class="btn btn-outline-secondary">Kota</button>
+        <button type="button" class="btn btn-outline-secondary">Kuliner</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID GALERI -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4 col-6">
+          <div class="galeri-item bg-success text-white shadow">🌲</div>
+          <p class="text-center mt-1 small">Hutan Pinus</p>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="galeri-item bg-info text-white shadow">🌊</div>
+          <p class="text-center mt-1 small">Pantai Biru</p>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="galeri-item bg-warning text-dark shadow">🏙️</div>
+          <p class="text-center mt-1 small">Kota Malam</p>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="galeri-item bg-danger text-white shadow">🌋</div>
+          <p class="text-center mt-1 small">Gunung Berapi</p>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="galeri-item bg-primary text-white shadow">🍜</div>
+          <p class="text-center mt-1 small">Mie Ayam</p>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="galeri-item bg-secondary text-white shadow">🌆</div>
+          <p class="text-center mt-1 small">Sunset Kota</p>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="galeri-item" style="background:#20c997;color:white;">🏖️</div>
+          <p class="text-center mt-1 small">Pantai Pasir</p>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="galeri-item" style="background:#6f42c1;color:white;">🌸</div>
+          <p class="text-center mt-1 small">Bunga Sakura</p>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="galeri-item" style="background:#fd7e14;color:white;">🍛</div>
+          <p class="text-center mt-1 small">Nasi Goreng</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0">© 2024 WebKu | <strong>Nama: Aris Musta'in</strong> | <strong>NIM: 253307026</strong></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

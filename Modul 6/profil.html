@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil - Bootstrap Tutorial</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .profil-header {
+      background: linear-gradient(135deg, #198754, #20c997);
+      color: white;
+      padding: 60px 0;
+    }
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+      margin: 0 auto 20px;
+    }
+    footer { background-color: #212529; color: #adb5bd; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html">🎓 WebKu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER PROFIL -->
+  <section class="profil-header text-center">
+    <div class="container">
+      <div class="avatar">👤</div>
+      <h2 class="fw-bold">Aris Musta'in</h2>
+      <p class="lead">Mahasiswa Teknologi Informasi</p>
+      <span class="badge bg-light text-dark fs-6">NIM: 253307026</span>
+    </div>
+  </section>
+
+  <!-- INFO PROFIL -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Data Diri -->
+        <div class="col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-success text-white">
+              <h5 class="mb-0">📋 Data Diri</h5>
+            </div>
+            <div class="card-body">
+              <table class="table table-bordered">
+                <tr><th>Nama</th><td>Aris Musta'in</td></tr>
+                <tr><th>NIM</th><td>253307026</td></tr>
+                <tr><th>Jurusan</th><td>Teknologi Informasi</td></tr>
+                <tr><th>Semester</th><td>4</td></tr>
+                <tr><th>Asal</th><td>Madiun, Jawa Timur</td></tr>
+                <tr><th>Email</th><td>arissmustainn@gmail.com</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keahlian -->
+        <div class="col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-success text-white">
+              <h5 class="mb-0">💡 Keahlian</h5>
+            </div>
+            <div class="card-body">
+              <p>HTML & CSS</p>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-success" style="width: 85%">85%</div>
+              </div>
+              <p>JavaScript</p>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-info" style="width: 70%">70%</div>
+              </div>
+              <p>Bootstrap</p>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-warning" style="width: 80%">80%</div>
+              </div>
+              <p>PHP & MySQL</p>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" style="width: 60%">60%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tentang Saya -->
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-header bg-success text-white">
+              <h5 class="mb-0">📝 Tentang Saya</h5>
+            </div>
+            <div class="card-body">
+              <p>
+                Saya adalah mahasiswa Teknologi Informasi yang sedang belajar
+                pengembangan web. Saya tertarik pada bidang front-end development
+                dan desain UI/UX. Saat ini saya sedang mempelajari berbagai
+                CSS framework seperti Bootstrap untuk mempercepat proses
+                pengembangan website yang responsif dan modern.
+              </p>
+              <div class="d-flex gap-2">
+                <span class="badge bg-primary">HTML</span>
+                <span class="badge bg-success">CSS</span>
+                <span class="badge bg-warning text-dark">JavaScript</span>
+                <span class="badge bg-info text-dark">Bootstrap</span>
+                <span class="badge bg-danger">PHP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0">© 2024 WebKu | <strong>Nama: Aris Musta'in</strong> | <strong>NIM: 253307026</strong></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berita - Aris Musta'in</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .berita-header {
+      background: linear-gradient(135deg, #dc3545, #fd7e14);
+      color: white;
+      padding: 60px 0;
+    }
+    .card-img-container {
+      height: 200px;
+      overflow: hidden;
+    }
+    .card-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    footer { background-color: #212529; color: #adb5bd; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html">🎓 WebKu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link active" href="berita.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="berita-header text-center">
+    <div class="container">
+      <h1 class="fw-bold">📰 Berita Terkini</h1>
+      <p class="lead">Update informasi seputar teknologi web</p>
+      <span class="badge bg-light text-dark fs-6">Nama: Aris Musta'in | NIM: 253307026</span>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+
+      <div class="card mb-4 shadow">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="card-img-container rounded-start">
+              <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80" alt="Bootstrap 5.3">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <span class="badge bg-danger mb-2">Utama</span>
+              <h4 class="card-title">Bootstrap 5.3 Rilis dengan Fitur Baru</h4>
+              <p class="card-text">
+                Bootstrap merilis versi terbaru dengan berbagai peningkatan performa,
+                komponen baru, dan dukungan penuh untuk dark mode secara native
+                menggunakan CSS variables.
+              </p>
+              <p class="text-muted small">📅 08 April 2026 | ✍️ Admin</p>
+              <button class="btn btn-danger btn-sm">Baca Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-container">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=500&q=60" alt="CSS Framework">
+            </div>
+            <div class="card-body">
+              <span class="badge bg-primary mb-1">Teknologi</span>
+              <h5 class="card-title">Tren CSS Framework 2026</h5>
+              <p class="card-text small">
+                Tailwind CSS dan Bootstrap masih mendominasi pilihan developer
+                dalam membangun antarmuka web yang modern dan responsif.
+              </p>
+              <p class="text-muted small">📅 05 April 2026</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-outline-primary btn-sm">Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-container">
+              <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=500&q=60" alt="Responsive Web">
+            </div>
+            <div class="card-body">
+              <span class="badge bg-success mb-1">Tutorial</span>
+              <h5 class="card-title">Cara Membuat Web Responsif</h5>
+              <p class="card-text small">
+                Panduan lengkap membuat tampilan website yang responsif
+                menggunakan grid system Bootstrap dengan mudah dan cepat.
+              </p>
+              <p class="text-muted small">📅 01 April 2026</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-outline-success btn-sm">Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-container">
+              <img src="https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&w=500&q=60" alt="UI/UX Design">
+            </div>
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-1">Desain</span>
+              <h5 class="card-title">Tips UI/UX untuk Pemula</h5>
+              <p class="card-text small">
+                Beberapa tips dasar desain UI/UX yang perlu diketahui
+                oleh pemula sebelum mulai membangun antarmuka aplikasi web.
+              </p>
+              <p class="text-muted small">📅 28 Maret 2026</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-outline-warning btn-sm">Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0">© 2024 WebKu | <strong>Nama: Aris Musta'in</strong> | <strong>NIM: 253307026</strong></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

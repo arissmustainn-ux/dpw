@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Bootstrap Tutorial</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+      color: white;
+      padding: 100px 0;
+    }
+    .navbar-brand { font-weight: bold; font-size: 1.5rem; }
+    footer { background-color: #212529; color: #adb5bd; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">🎓 WebKu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Selamat Datang di WebKu</h1>
+      <p class="lead">Website sederhana menggunakan CSS Framework Bootstrap 5</p>
+      <a href="profil.html" class="btn btn-light btn-lg me-2">Lihat Profil</a>
+      <a href="kontak.html" class="btn btn-outline-light btn-lg">Hubungi Kami</a>
+      <div class="mt-4">
+        <span class="badge bg-light text-dark fs-6">Nama: Aris Musta'in | NIM: 253307026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FITUR -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Mengapa Bootstrap?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <div class="fs-1 mb-3">⚡</div>
+              <h5 class="card-title">Cepat</h5>
+              <p class="card-text">Bootstrap menyediakan komponen siap pakai sehingga pengembangan lebih cepat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <div class="fs-1 mb-3">📱</div>
+              <h5 class="card-title">Responsif</h5>
+              <p class="card-text">Tampilan otomatis menyesuaikan ukuran layar dari mobile hingga desktop.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <div class="fs-1 mb-3">🎨</div>
+              <h5 class="card-title">Indah</h5>
+              <p class="card-text">Desain modern dan konsisten tersedia tanpa perlu menulis banyak CSS dari nol.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARA MENAMBAHKAN BOOTSTRAP -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Cara Menambahkan Bootstrap</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h5>1. Via CDN (paling mudah)</h5>
+          <p>Tambahkan kode berikut di dalam tag &lt;head&gt; HTML:</p>
+          <div class="bg-dark text-light p-3 rounded">
+            <code class="text-warning">
+              &lt;link rel="stylesheet"<br>
+              &nbsp;href="https://cdn.jsdelivr.net/<br>
+              &nbsp;npm/bootstrap@5.3.2/dist/css/<br>
+              &nbsp;bootstrap.min.css"&gt;
+            </code>
+          </div>
+          <br>
+          <p>Tambahkan script JS sebelum &lt;/body&gt;:</p>
+          <div class="bg-dark text-light p-3 rounded">
+            <code class="text-warning">
+              &lt;script src="https://cdn.jsdelivr.net/<br>
+              &nbsp;npm/bootstrap@5.3.2/dist/js/<br>
+              &nbsp;bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+            </code>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5>2. Via Download</h5>
+          <ol>
+            <li>Kunjungi <strong>https://getbootstrap.com</strong></li>
+            <li>Klik tombol <strong>Download</strong></li>
+            <li>Ekstrak file zip yang diunduh</li>
+            <li>Salin folder <code>css</code> dan <code>js</code> ke proyek kamu</li>
+            <li>Link file lokal di HTML kamu</li>
+          </ol>
+          <a href="https://getbootstrap.com" target="_blank" class="btn btn-primary">
+            Kunjungi Bootstrap
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0">© 2024 WebKu | <strong>Nama: Aris Musta'in</strong> | <strong>NIM: 253307026</strong></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
