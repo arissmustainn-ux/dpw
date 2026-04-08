@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coba Form</title>
+</head>
+
+<body>
+
+<h2>Form Data Mahasiswa</h2>
+
+<form action="proses.php" method="post" target="_self">
+
+Nama : <input type="text" name="nama"><br><br>
+
+NIM : <input type="text" name="nim"><br><br>
+
+Jurusan :
+<select name="jurusan">
+<option>Teknologi Informasi</option>
+<option>Akuntansi</option>
+<option>Administrasi Bisnis</option>
+</select>
+
+<br><br>
+
+<input type="submit" value="Kirim">
+<input type="reset" value="Reset">
+
+</form>
+
+<p>
+Kesimpulan: Tombol reset digunakan untuk menghapus semua data yang telah diisi pada form.
+Tombol submit digunakan untuk mengirim data ke server untuk diproses.
+Method GET mengirim data melalui URL, sedangkan POST mengirim data melalui body HTTP
+sehingga lebih aman dan tidak terlihat pada URL.
+</p>
+
+</body>
+</html>

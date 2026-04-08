@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Belaja CSS Grid box</title>
+  <style>
+    .tempat_grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196F3;
+      padding: 10px;
+
+      /* Skenario 3 - tambahkan gap */
+      grid-column-gap: 100px;
+      grid-row-gap: 50px;
+
+      /* Skenario 4 - ganti 2 baris di atas dengan: */
+      /* grid-gap: 50px; */
+    }
+
+    .item_grid {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tampilan:</h1>
+  <div class="tempat_grid">
+    <div class="item_grid">1</div>
+    <div class="item_grid">2</div>
+    <div class="item_grid">3</div>
+    <div class="item_grid">4</div>
+    <div class="item_grid">5</div>
+    <div class="item_grid">6</div>
+    <div class="item_grid">7</div>
+    <div class="item_grid">8</div>
+    <div class="item_grid">9</div>
+    <div>Kesimpulan Skenario 1: display:grid membuat elemen tersusun dalam grid 3 kolom secara otomatis. Skenario 2 inline-grid membuat container hanya selebar kontennya. Skenario 3: grid-column-gap dan grid-row-gap memberi jarak antar kolom dan baris. Skenario 4: grid-gap adalah shorthand dari keduanya sekaligus.</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Halaman Audio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Aris Musta'in">
+  <meta name="nim" content="253307026">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; }
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px;
+      background: #ccc;
+      padding: 20px;
+    }
+    nav ul { list-style-type: none; padding: 0; }
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+      min-height: 300px;
+    }
+    section::after { content: ""; display: table; clear: both; }
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    @media (max-width: 600px) {
+      nav, article { width: 100%; height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Judul Website</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gambar.html">Gambar</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+      </ul>
+    </nav>
+
+    <article>
+  <h1>Pemutar Audio</h1>
+
+  <p>Audio 1 (Klik Play untuk memutar):</p>
+  <audio controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Browser tidak mendukung pemutar audio.
+  </audio>
+  <br><br>
+
+  <p>Audio 2 (Autoplay + Muted - Aktifkan suara manual):</p>
+  <audio controls autoplay muted>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+    Browser tidak mendukung pemutar audio.
+  </audio>
+
+  <hr>
+  <p>
+    <b>Kesimpulan:</b><br>
+    * Atribut <b>controls</b>: Menampilkan tombol play/pause/volume.<br>
+    * Atribut <b>autoplay</b>: Membuat audio langsung diputar saat halaman dibuka.<br>
+    * Atribut <b>muted</b>: Wajib ada jika ingin <i>autoplay</i> berhasil di browser modern (seperti Chrome/Edge), karena kebijakan privasi melarang suara otomatis yang mengejutkan pengguna.
+  </p>
+</article>
+  </section>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+</body>
+</html>

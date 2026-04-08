@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Mengakses Objek password</title> </head>
+<body>
+    <form name="formTes" action="tesform.htm" method="POST"> <pre>
+Password Pengganti  : <input type="password" name="password_1"> Password Sekali Lagi: <input type="password" name="password_2"> </pre>
+        <input type="button" name="tombolProses" value="Proses" onclick="cekPassword()"> </form>
+
+    <script language="Javascript"> // [cite: 232]
+        function cekPassword() { // [cite: 233]
+            if (document.formTes.password_1.value != document.formTes.password_2.value) { // [cite: 234, 235]
+                alert("Dua password yang Anda masukkan tidak sama"); // [cite: 236]
+            } else { // [cite: 246]
+                window.location.href = "tesform.htm"; // [cite: 255, 256]
+            }
+        }
+    </script>
+</body>
+</html>

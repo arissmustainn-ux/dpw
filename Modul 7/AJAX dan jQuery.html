@@ -1,0 +1,11 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<p id="teks">Klik tombol di bawah untuk menghilangkan saya.</p>
+<button id="tombolHapus">Sembunyikan</button>
+
+<script>
+    $(document).ready(function(){
+        $("#tombolHapus").click(function(){
+            $("#teks").hide();
+        });
+    });
+</script>

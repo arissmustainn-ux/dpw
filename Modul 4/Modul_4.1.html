@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Selectors - Lengkap</title>
+  <style>
+
+    /* ===== 1A. SIMPLE SELECTORS ===== */
+    p {
+      text-align: center;
+      color: aqua;
+      border: 2px solid #333;
+      padding: 10px;
+      margin: 8px;
+    }
+
+    #kalimat {
+      text-align: left;
+      color: red;
+      background-color: #f0f0f0;
+    }
+
+    .center {
+      text-align: center;
+      color: chocolate;
+      background-color: #fffbe6;
+    }
+
+    p.tengah {
+      text-align: center;
+      color: darkmagenta;
+      display: block;
+      background-color: #777777;
+    }
+
+
+    /* ===== 1B. COMBINATOR SELECTORS ===== */
+    div p {
+      color: red;
+    }
+
+    div > p {
+      background-color: yellow;
+    }
+
+    div + p {
+      background-color: darkgray;
+    }
+
+    div ~ p {
+      color: cyan;
+    }
+
+
+    /* ===== 1C. PSEUDO-CLASS SELECTORS ===== */
+    .pseudo-demo p {
+      display: none;
+      background-color: darkgray;
+      padding: 20px;
+    }
+
+    .pseudo-demo:hover p {
+      display: block;
+    }
+
+    a:link {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    a:active {
+      color: orange;
+    }
+
+
+    /* ===== 1D. PSEUDO-ELEMENTS SELECTORS ===== */
+    .pseudo-elem-p::first-line {
+      background-color: red;
+    }
+
+
+    /* ===== SECTION DIVIDER ===== */
+    .section {
+      border: 2px solid #999;
+      margin: 30px 0;
+      padding: 15px;
+      background-color: #fafafa;
+    }
+
+    .section h2 {
+      background-color: #333;
+      color: white;
+      padding: 6px 12px;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ===== 1A. SIMPLE SELECTORS ===== -->
+  <div class="section">
+    <h2>1A. Simple Selectors</h2>
+    <p>Penggunaan CSS sangat membantu web desainer dalam menyusun halaman yang konsisten pada proyek pembuatan halaman web</p>
+    <p id="kalimat">Dalam penulisan CSS sangat sederhana namun powerful dalam desain</p>
+    <p class="center">CSS mempunyai sifat pewarisan secara default style anak akan mewarisi style dari parent kecuali anak mendeskripsikan stylenya sendiri</p>
+    <p class="tengah">Ini adalah hasil selector dengan elemen p dengan class tengah</p>
+  </div>
+
+
+  <!-- ===== 1B. COMBINATOR SELECTORS ===== -->
+  <div class="section">
+    <h2>1B. Combinator Selectors</h2>
+    <div>
+      <p>This is a paragraph. Selektor no 1 (div p - descendant): mempengaruhi semua &lt;p&gt; di dalam &lt;div&gt;. Teks berwarna merah.</p>
+      <p>This is a paragraph. Selektor no 2 (div &gt; p - child): mempengaruhi &lt;p&gt; anak langsung &lt;div&gt;. Background kuning.</p>
+    </div>
+    <p>This is a paragraph. Selektor no 3 (div + p - adjacent sibling): mempengaruhi &lt;p&gt; yang langsung setelah &lt;div&gt;. Background abu-abu gelap.</p>
+    <p>This is a paragraph. Selektor no 4 (div ~ p - general sibling): mempengaruhi semua &lt;p&gt; saudara setelah &lt;div&gt;. Teks berwarna cyan.</p>
+  </div>
+
+
+  <!-- ===== 1C. PSEUDO-CLASS SELECTORS ===== -->
+  <div class="section">
+    <h2>1C. Pseudo-Class Selectors</h2>
+    <div class="pseudo-demo">Letakkan kursor disini untuk melihat div elemen
+      <p>Saya adalah element p</p>
+    </div>
+    <br>
+    <p style="display:block; background:none; border:none; padding:0; color:#333; text-align:left;">
+      Contoh link dengan pseudo class — arahkan mouse ke link di bawah:
+    </p>
+    <a href="#">Klik atau arahkan mouse ke sini untuk melihat perubahan warna link</a>
+  </div>
+
+
+  <!-- ===== 1D. PSEUDO-ELEMENTS SELECTORS ===== -->
+  <div class="section">
+    <h2>1D. Pseudo-Elements Selectors</h2>
+    <p class="pseudo-elem-p">
+      Belakangan ini tengah ramai menjadi perbincangan netizen, soal platform chat yang memanfaatkan kecanggihan
+      Artificial Intelligence (AI), yakni Chat GPT.
+      Namun tak sedikit pula dari orang-orang, yang penasaran bagaimana cara pakai Chat GPT.
+      Bagi yang belum tahu, platform ini mirip seperti chatbot yang dikembangkan oleh Open AI, startup besutan Elon Musk.
+      Artikel ini telah tayang di TribunJatim.com dengan judul Mengenal Chat GPT, Kecerdasan Buatan Open AI Viral di
+      Media sosial.
+    </p>
+  </div>
+
+</body>
+</html>

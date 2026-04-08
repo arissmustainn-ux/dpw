@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar Flex Box</title>
+  <style>
+
+    /* ===== SKENARIO 1 ===== */
+    .wadah-flex {
+      /* menjadi flexsibel dengan mengatur property display dengan nilai flex.*/
+      display: flex;
+      background-color: #f0e68c; /* ganti sesuai selera */
+    }
+
+    /* ===== SKENARIO 2 ===== */
+    /* Tambahkan Style untuk setiap div anak dari class wadah-flex */
+    .wadah-flex > div {
+      background-color: #4CAF50;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+    }
+
+    /* ===== SKENARIO 3 ===== */
+    /* flex-direction: row; */
+    /* Coba nilai lain: row-reverse, column, column-reverse */
+
+    /* ===== SKENARIO 4 ===== */
+    /* flex-wrap: wrap; */
+    /* Coba nilai lain: nowrap, wrap-reverse */
+
+    /* ===== SKENARIO 5 ===== */
+    /* flex-flow: row wrap; */
+    /* flex-flow menggabungkan flex-direction dan flex-wrap */
+    /* Coba nilai lain: column wrap, row-reverse wrap-reverse */
+
+    /* ===== SKENARIO 6 ===== */
+    /* justify-content: center; */
+    /* Coba nilai lain: flex-start, flex-end, space-between, space-around, space-evenly */
+
+  </style>
+</head>
+<body>
+
+  <div class="wadah-flex">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+  </div>
+
+  <p>Kesimpulan skenario 1 adalah : Dengan display:flex, elemen-elemen di dalam wadah akan tersusun secara horizontal (baris) secara default dan menjadi fleksibel.</p>
+
+  <p>kesimpulan skenario 2 adalah : Setelah menambahkan style pada div anak, setiap item flex memiliki ukuran, warna, margin dan padding yang terlihat jelas perbedaannya.</p>
+
+  <p>kesimpulan skenario 3 adalah : flex-direction mengatur arah susunan item. Nilai row=horizontal, column=vertikal, row-reverse dan column-reverse membalik arahnya.</p>
+
+  <p>kesimpulan skenario 4 adalah : flex-wrap:wrap membuat item turun ke baris baru jika tidak cukup ruang. nowrap memaksa semua item dalam satu baris meski meluber.</p>
+
+  <p>kesimpulan skenario 5 adalah : flex-flow adalah shorthand dari flex-direction dan flex-wrap sekaligus, sehingga lebih ringkas penulisannya.</p>
+
+  <p>kesimpulan skenario 6 adalah : justify-content mengatur distribusi ruang antar item secara horizontal. space-between memberi jarak antar item, center memusatkan semua item.</p>
+
+</body>
+</html>

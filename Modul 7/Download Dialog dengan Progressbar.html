@@ -1,0 +1,27 @@
+<div id="dialog-download" title="Sedang Mengunduh...">
+  <div id="progressbar"></div>
+</div>
+
+<script>
+  $(function() {
+    var progressbar = $("#progressbar");
+    
+    $("#dialog-download").dialog({
+      modal: true,
+      open: function() {
+        var val = 0;
+        var interval = setInterval(function() {
+          val += 2;
+          progressbar.progressbar({ value: val });
+          if (val >= 100) {
+            clearInterval(interval);
+            $("#dialog-download").dialog("close");
+            alert("Unduhan Selesai!");
+          }
+        }, 100);
+      }
+    });
+    
+    progressbar.progressbar({ value: 0 });
+  });
+</script>

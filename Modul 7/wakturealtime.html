@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Waktu Real Time</title>
+</head>
+<body>
+    <h2>Waktu Saat Ini:</h2>
+    <div id="jam_realtime" style="font-size: 24px; font-weight: bold;"></div>
+
+    <script>
+        function updateWaktu() {
+            var sekarang = new Date();
+            var tanggal = sekarang.toLocaleDateString('id-ID');
+            var jam = sekarang.getHours().toString().padStart(2, '0');
+            var menit = sekarang.getMinutes().toString().padStart(2, '0');
+            var detik = sekarang.getSeconds().toString().padStart(2, '0');
+            
+            document.getElementById("jam_realtime").innerHTML = 
+                tanggal + " - " + jam + ":" + menit + ":" + detik;
+        }
+
+        // Jalankan fungsi setiap 1000 milidetik (1 detik)
+        setInterval(updateWaktu, 1000);
+        updateWaktu(); // Panggil sekali di awal agar tidak kosong
+    </script>
+</body>
+</html>
